@@ -22,7 +22,7 @@ if (process.env.AUTH_GOOGLE_CLIENT_SECRET) {
     throw new Error('Google Secret Client Environment Variable is not found');
 };
 
-export const authOptions: AuthOptions = {
+const authOptions: AuthOptions = {
     providers: [
         Google({
             clientId: googleClientEnv,

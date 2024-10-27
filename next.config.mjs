@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     basePath: '/ecommerce-app',
-    output: 'export',
     reactStrictMode: true,
     swcMinify: true,
     images: {
