@@ -53,7 +53,7 @@ const Nav = () => {
                 <div className="flex gap-5 flex-center items-center">
                     
                     
-                    <Link href='/profile' className="flex items-center gap-3">
+                    <div className="flex items-center gap-3">
                         <Image 
                             src={session?.user.image || '/assets/images/profile-image.png'} 
                             
@@ -64,7 +64,7 @@ const Nav = () => {
                         />
                         
                         <p> {session.user.name}  </p>
-                    </Link>
+                    </div>
 
 
                     <Link href='/cart' className="cart_btn">
@@ -124,14 +124,7 @@ const Nav = () => {
 
                     {toggleDropdown && (
                     <div className='dropdown_prof'>
-                        <Link
-                            href='/profile'
-                            className='drop_link'
-                            onClick={() => setToggleDropdown(false)}
-                        >
-                            My Profile
-                        </Link>
-
+                        
                         <Link
                             href='/cart'
                             className='mt-5 w-full cart_btn'
