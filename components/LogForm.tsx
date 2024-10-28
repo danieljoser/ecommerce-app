@@ -122,13 +122,9 @@ const LogForm = ({ type }: form) => {
                 <form className="sm:w-3/12 mt-10 w-full flex flex-col gap-5 glassmorphism font-satoshi ">
                     
                     <div className='flex flex-col'>
-                        <button
-                            type="submit"
-                            className='violet_btn'
-                            onClick={() => signIn('email', {email: form.email, callbackUrl: 'http://localhost:3000'})}
-                        >
+                        <Link href='/api/auth/signin' className="orange_btn">
                             Sign in with Google or with your account
-                        </button>
+                        </Link>   
                     </div>
                     <div className="flex flex-col items-center gap-4">
                 
