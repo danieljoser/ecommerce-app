@@ -22,7 +22,7 @@ const ProductCard = ({product}: Product) => {
     const router = useRouter();
 
     function handleClick() {
-        router.push(`http://localhost:3000/products/id/?id=${product.id}`)
+        router.push(`/products/id/?id=${product.id}`)
     }
 
   return (

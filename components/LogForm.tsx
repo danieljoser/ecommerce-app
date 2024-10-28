@@ -130,7 +130,7 @@ const LogForm = ({ type }: form) => {
                 
                         <p>Don't have an account?</p>
                             <div className="flex items-center gap-4">
-                                <Link href='/signup' className="orange_btn">
+                                <Link href='/signup' className="violet_btn">
                                     Register
                                 </Link>
                             </div>
