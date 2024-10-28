@@ -122,7 +122,7 @@ const LogForm = ({ type }: form) => {
                 <form className="sm:w-3/12 mt-10 w-full flex flex-col gap-5 glassmorphism font-satoshi ">
                     
                     <div className='flex flex-col'>
-                        <Link href='/api/auth/signin' className="orange_btn">
+                        <Link href='/api/auth/signin' className="violet_btn">
                             Sign in with Google or with your account
                         </Link>   
                     </div>
@@ -130,7 +130,7 @@ const LogForm = ({ type }: form) => {
                 
                         <p>Don't have an account?</p>
                             <div className="flex items-center gap-4">
-                                <Link href='/signup' className="violet_btn">
+                                <Link href='/signup' className="orange_btn">
                                     Register
                                 </Link>
                             </div>
