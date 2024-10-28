@@ -18,7 +18,7 @@ const Filter = () => {
 
     const [products, setProducts] = useState([]);
 
-    const domain = 'http://localhost:3000/';
+    
     
     
 
@@ -48,7 +48,7 @@ const Filter = () => {
     useEffect(() => {
         
         
-        router.push(`${domain}products?category=${category}&price=${formData.priceFilter}&rating=${formData.ratingFilter}&review=${formData.reviewFilter}`)
+        router.push(`/products?category=${category}&price=${formData.priceFilter}&rating=${formData.ratingFilter}&review=${formData.reviewFilter}`)
         getProducts();
     }, [formData, category])
     
